@@ -1,0 +1,42 @@
+Access modifiers:
+
+Classes:
+
+public -> The class is accessible by any other class (within or outside package)
+default -> The class is accessible by any other class within the same package,
+                         inheritance would not work outside package
+                         Neither would creating an object outside the package
+
+Attributes, methods and constructors
+
+public	-> The code is accessible by any other class (within or outside package)
+
+default	-> The code is accessible by any other class within the same package, inheritance/Creating object would not work outside package
+
+protected -> The code is accessible in the same package and subclasses (To be inherited outside package).  (Default + Inheritance)
+
+private -> The code is only accessible within the declared class	
+
+
+
+Non-Access modifiers:
+
+Classes:
+
+final -> a. class cannot be inherited  b. Object of the class can be created
+
+ex: String class
+
+abstract -> The class cannot be used to create objects (To access an abstract class, it must be inherited from another class)
+
+
+Attributes, methods:
+
+final -> Attributes and methods cannot be overridden/modified
+
+abstract -> Can only be used in an abstract class, and can only be used on methods. The method does not have a body, for example abstract void run();. The body is provided by the subclass (inherited from).
+
+static	-> Attributes and methods belongs to the class, rather than an object
+		   constants can be defined without taking additional memory
+		   static Attributes and methods, can directly be accessed, need not create the object.
+		   
